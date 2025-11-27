@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie App – Static Demo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #e50914;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .rating {
+            margin-top: 5px;
+            color: #f5c518;
+        }
+    </style>
+</head>
+<body>
+
+<header>🎬 Sachin’s Movie App (Static Demo)</header>
+
+<div class="container">
+
+    <div class="movie-card">
+        <img src="https://image.tmdb.org/t/p/w500/8YFL5QQVPy3AgrEQxNYVSgiPEbe.jpg">
+        <div class="movie-info">
+            <div class="title">Avengers: Endgame</div>
+            <div class="rating">⭐ 8.5/10</div>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://image.tmdb.org/t/p/w500/6chZcnjWEiFfpmBse0ehfqb0fFj.jpg">
+        <div class="movie-info">
+            <div class="title">John Wick</div>
+            <div class="rating">⭐ 7.4/10</div>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg">
+        <div class="movie-info">
+            <div class="title">Spider-Man: No Way Home</div>
+            <div class="rating">⭐ 8.2/10</div>
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg">
+        <div class="movie-info">
+            <div class="title">Black Adam</div>
+            <div class="rating">⭐ 6.8/10</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

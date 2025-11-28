@@ -21,9 +21,4 @@ jobs:
       - name: Build Maven Project
         run: mvn -q -DskipTests package
 
-      - name: Trigger Render Deploy
-        env:
-          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
-        run: |
-          echo "Deploying to Render..."
-          curl -X POST "$RENDER_DEPLOY_HOOK"
+

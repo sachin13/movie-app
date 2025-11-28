@@ -9,15 +9,6 @@ import org.springframework.web.client.RestTemplate;
 public class MovieService {
 	
 	
-	@Value("${tmdb.api.key}")
-	private String apiKey;
-	
-	private final RestTemplate restTemplate =new RestTemplate();
-	
-	public MovieListResponse  getTrendingMovies() {
-		String url = "https://api.themoviedb.org/3/trending/movie/week?api_key=" + apiKey;
-		
-		return restTemplate.getForObject(url, MovieListResponse.class);
-	}
+
 
 }
